@@ -1,20 +1,61 @@
 a {
-    color: goldenrod;
-    &:hover {color: red;}
+    color: $primary_color;
+    &:hover {color: navy;}
     &:active {color:green}
 }
-
+header {
+    img {
+        filter: grayscale(100);
+    }
+}
 figure {
     margin:0;
+}
+ul {
+    list-style: none;
 }
 
 nav {
     display: flex;
     justify-content: center;
     ul {
-        list-style: none;
         display: flex;
         justify-content: space-around;
         gap: 1em;
+        li {
+            background-color: $primary_color;
+            padding: 15px 10px;
+            font-family: Roboto-regular;
+            &:hover {
+                background-color: white;
+                color: $primary_color;
+                a {
+                    color: $primary_color;
+                }
+            }  
+            a {
+                text-decoration: none;
+                color: white;               
+            } 
+        }
     }
+}
+
+h1,h2 {
+    font-family: playfair-bold;
+}
+h1 {
+    text-align: center;
+    color: $primary_color;
+    font-size: 3vh;
+}
+h2 {
+    color: $secondary_color;
+
+}
+/*Section A propos*/
+.container{
+    display: flex;
+    justify-content: space-around;
+
 }
