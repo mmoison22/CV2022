@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>CV 2022</title>
@@ -22,7 +23,7 @@
                 sizes="(min-width:400) 775px, (min-width:960) 1550px, (min-width:1600) 2100px, 100vw" alt="banniere"
                 style="object-fit: cover;">
         </figure>
-        <nav style="background-color: aqua;">
+        <nav class="desktop" /*style="background-color: aqua;"*/>
             <ul>
                 <li><a href="#apropos">Présentation</a></li>
                 <li><a href="#comp">Compétences</a></li>
@@ -31,6 +32,18 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="mobile">
+            <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#apropos">Présentation</a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#exp">Expérience</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
         <h1>Développeur Full Stack</h1>
     </header>
     <main>
@@ -44,8 +57,7 @@
                     <ul>
                         <li>MOISON</li>
                         <li>Michaël</li>
-                        <li><span class="material-icons-outlined">
-                                email</span><a href="mailto:john.doe@free.fr">michael.moison@neuf.fr</a></li>
+                        <li><a href="mailto:john.doe@free.fr">michael.moison@neuf.fr</a></li>
                         <li><a href="tel:0636465666" class="active">06 36 46 56 66</a></li>
                         <li>666 rue Guy de Maupassant, 78500 Sartrouville</li>
                     </ul>

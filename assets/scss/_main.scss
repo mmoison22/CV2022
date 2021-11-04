@@ -59,3 +59,51 @@ h2 {
     justify-content: space-around;
 
 }
+section:nth-of-type(odd) {
+    background-color: rgba($color: goldenrod, $alpha: 0.4);
+    h2 {
+        text-transform: uppercase;
+        padding:0.2em;
+        padding-left: 1em;
+    }
+}
+section:nth-of-type(even) {
+    background-color: rgba($color: goldenrod, $alpha: 0.6);
+    h2 {
+        text-align: right;
+        text-transform: uppercase;
+        padding:0.2em;
+        padding-right: 1em;
+    }
+}
+
+.apropos__description {
+    line-height: 2em;
+    li {
+        &:nth-child(1) {
+            font-size: 1.3em;
+        }
+        &:nth-child(2) {
+            position: relative;
+            &::before {
+                font-family: "Material Icons";
+                content:"\e0be";
+                font-size: 1.2em;
+                position: absolute;
+                top:0px;
+                left: -25px;
+            }
+        }
+        &:nth-child(3) {
+            position: relative;
+            &::before {
+                font-family: "Material Icons";
+                content:"\e324";
+                font-size: 1.2em;
+                position: absolute;
+                top:0px;
+                left: -25px;
+            }
+        }
+    }
+}
