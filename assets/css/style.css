@@ -56,7 +56,7 @@ h1, h2 {
 h1 {
   text-align: center;
   color: #DAA520;
-  font-size: 3vh; }
+  font-size: 5vw; }
 
 h2 {
   color: #373737; }
@@ -104,9 +104,46 @@ section:nth-of-type(even) {
       top: 0px;
       left: -25px; }
 
+/*Footer*/
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  footer .footer__social {
+    display: flex;
+    gap: 20px; }
+    footer .footer__social .footer__social-item {
+      font-size: 40px;
+      color: rgba(14, 118, 168, 0.5);
+      cursor: pointer;
+      transition-duration: 500ms; }
+      footer .footer__social .footer__social-item:hover {
+        color: #0e76a8; }
+
+.desktop {
+  display: none; }
+
 @media screen and (min-width: 480px) and (max-width: 779px) {
+  .desktop {
+    display: block; }
+
+  .mobile {
+    display: none; }
+
+  .formation__container {
+    display: flex;
+    flex-wrap: wrap; }
+    .formation__container article {
+      width: 45%;
+      margin: 5px; } }
+@media screen and (min-width: 780px) {
   h1 {
-    font-size: 10 vh; }
+    color: #373737; }
+
+  .formation__container {
+    display: flex; }
 
   .desktop {
     display: block; }

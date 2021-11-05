@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CV 2022</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="assets/img/dev-worker_x2100.jpg"
+                srcset="assets/img/dev-worker_x2100.jpg 2100w, assets/img/dev-worker_x1550.jpg 1550w, assets/img/dev-worker_x775.jpg 775w, assets/img/dev-worker_x390.jpg 390w"
+                sizes="(min-width:400) 775px, (min-width:960) 1550px, (min-width:1600) 2100px, 100vw" alt="banniere"
+                style="object-fit: cover;">
+        </figure>
+        <nav class="desktop" /*style="background-color: aqua;"*/>
+            <ul>
+                <li><a href="#apropos">Présentation</a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#exp">Expérience</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile">
+            <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#apropos">Présentation</a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#exp">Expérience</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <section>
+            <h1>Contact</h1>
+            <form action="/response.html" method="post">
+                <div class="form"><label for="name">Prénom : </label><input type="text" id="name"></div>
+                <div class="form"><label for="surname">Nom : </label><input type="text" id="surname"></div>
+                <div class="form"><label for="email">Courriel : </label><input type="email" id="email"></div>
+                <div class="form"><label for="phone">Téléphone : </label><input type="text" id="phone"></div>
+                <div class="form"><label for="message">Message : </label><textarea name="" id="message" cols="30" rows="10"></textarea>
+                <div class="buttons">
+                    <input type="button" value="Envoyer">
+                    <input type="reset" value="Effacer">
+                </div>
+            </form>
+
+        </section>
+    </header>
+ 
+    <footer>
+        <div class="footer__social">
+            <div class="footer__social-item"><i class="fab fa-linkedin-in"></i></div>
+            <div class="footer__social-item"><i class="fab fa-twitter"></i></div>
+            <div class="footer__social-item"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="copyright">
+            Tous droits réservés &#169;
+        </div>
+        <div class="links"></div>
+    </footer>
+</body>
+
+</html>

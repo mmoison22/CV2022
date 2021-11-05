@@ -47,7 +47,7 @@ h1,h2 {
 h1 {
     text-align: center;
     color: $primary_color;
-    font-size: 3vh;
+    font-size: 5vw;
 }
 h2 {
     color: $secondary_color;
@@ -106,4 +106,29 @@ section:nth-of-type(even) {
             }
         }
     }
+}
+/*Footer*/
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .footer__social {
+        display: flex;
+        gap:20px;
+        .footer__social-item {
+            font-size: 40px;
+            color: rgba($color: #0e76a8, $alpha: 0.5);
+            cursor: pointer;
+            transition-duration: 500ms;
+            &:hover {
+                color: #0e76a8;
+                
+            }
+        }
+    }
+}
+.desktop {
+    display: none;
 }
